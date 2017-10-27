@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="/home/mav/docs/7MC/github/7mc-package/smc/fun/funPrint_files/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/home/mav/docs/7MC/github/7mc-package/smc/fun/funPrint_files/alphabet.js"></script>
+  </head>
+  <body>
+    
+    <canvas id="myCanvas" moz-opaque></canvas>
+
+    <script type="text/javascript" src="/home/mav/docs/7MC/github/7mc-package/smc/fun/funPrint_files/bubbles.js"></script>
+    <script>
+
+        
+        text = "['hasdfo']";
+        document.springStrength = 0.1;
+        document.userScalar = 1;
+        document.netMode = false;
+
+        text = text.slice(2, -2);
+
+        if (5 < 6) {
+            bubbleShape = "circle";
+        }
+        else {
+            bubbleShape = "square";
+        }
+        drawName(text);
+        bounceBubbles();
+    </script>
+  </body>
+</html>

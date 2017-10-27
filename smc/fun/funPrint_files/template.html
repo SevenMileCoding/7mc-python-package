@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="{{ dir|path_join('jquery-1.10.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ dir|path_join('alphabet.js') }}"></script>
+  </head>
+  <body>
+    
+    <canvas id="myCanvas" moz-opaque></canvas>
+
+    <script type="text/javascript" src="{{ dir|path_join('bubbles.js') }}"></script>
+    <script>
+
+        
+        text = "{{ printText|safe }}";
+        document.springStrength = {{ spring }};
+        document.userScalar = {{ scale }};
+        document.netMode = {{ net }};
+
+        text = text.slice(2, -2);
+
+        if (5 < 6) {
+            bubbleShape = "circle";
+        }
+        else {
+            bubbleShape = "square";
+        }
+        drawName(text);
+        bounceBubbles();
+    </script>
+  </body>
+</html>
